@@ -1,0 +1,17 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        type: string
+        required: true
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ncipollo/release-action@v1
+      with:
+        tag: ${{ inputs.version }}
+        generateReleaseNotes: true
