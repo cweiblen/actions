@@ -27,4 +27,4 @@ jobs:
         DEFAULT_BUMP: patch
         PRERELEASE: true
         PRERELEASE_SUFFIX: ${{ github.run_attempt }}
-        RELEASE_BRANCHES: main
+        # RELEASE_BRANCHES: main
