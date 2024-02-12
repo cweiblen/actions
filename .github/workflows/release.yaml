@@ -1,5 +1,12 @@
 name: Create Release
 
+permissions:
+  id-token: write
+  contents: write
+  issues: write
+  pull-requests: write
+  checks: write
+
 on:
   workflow_dispatch:
     inputs:
